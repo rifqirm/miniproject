@@ -25,11 +25,11 @@ const Table = () => {
                     <tr>
                         <th scope="col">No</th>
                         <th scope="col">Nama Produk</th>
-                        <th scope="col">Kategori Produk</th>
+                        <th scope="col">Kategori Produk Tanaman Hias</th>
                         <th scope="col">Gambar Produk</th>
                         <th scope="col">Jenis Produk</th>
                         <th scope="col">Jumlah Produk</th>
-                        <th scope="col" colSpan={2}>Action</th>
+                        <th scope="col" colSpan={2}><center>Action</center></th>
                     </tr>
                 </thead>
                 <tbody>

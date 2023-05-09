@@ -11,10 +11,10 @@ import { storage } from "../../config/firebaseConfig";
 import { gql, useQuery, useMutation } from "@apollo/client";
 import { InsertProduct, GetProductList } from "../../helpers/gqlHasura";
 
-const Form = ({product}) => {
+const Form = ({ product }) => {
     // const { dataSQL, loading, errorSQL } = useQuery(GetProductList);
     const [insertProduct] = useMutation(InsertProduct, {
-        refetchQueries: [{ query: GetProductList}],
+        refetchQueries: [{ query: GetProductList }],
     });
 
 
@@ -48,13 +48,13 @@ const Form = ({product}) => {
         const name = e.target.name;
         const value = e.target.value;
 
-        if(name === "productImage") {
+        if (name === "productImage") {
             setData((prev) => ({
                 ...prev,
                 [name]: e.target.files[0]
             }))
         }
-        
+
         else {
             setData((prev) => ({
                 ...prev,
@@ -62,7 +62,7 @@ const Form = ({product}) => {
             }))
         }
 
-        
+
 
         if (name === "productName") {
             if (value.length > 30) {
@@ -82,16 +82,16 @@ const Form = ({product}) => {
             error.productName = "Harap Isi Nama Produk !";
         }
         if (!data.productCathegory) {
-            error.productCathegory= "Harap Pilih Kategori Produk !";
+            error.productCathegory = "Harap Pilih Kategori Produk !";
         }
         if (!data.productImage) {
-            error.productImage= "Harap Input Gambar Produk !";
+            error.productImage = "Harap Input Gambar Produk !";
         }
         if (!data.productCathegory) {
             error.productCathegory = "Harap Pilih Jenis Produk !";
         }
         if (!data.productDesc) {
-            error.productDesc= "Harap Isi Deskripsi Tambahan !";
+            error.productDesc = "Harap Isi Deskripsi Tambahan !";
         }
         if (!data.productPrice) {
             error.productPrice = "Harap Isi Banyaknya Produk !";
@@ -119,7 +119,7 @@ const Form = ({product}) => {
         // handle file upload
         uploadTask.on(
             "state_changed",
-            
+
             // callback ketika upload progress
             (snapshot) => {
                 const percent = Math.round(
@@ -140,30 +140,30 @@ const Form = ({product}) => {
             () => {
                 // download url
                 getDownloadURL(uploadTask.snapshot.ref)
-                .then(url => {
+                    .then(url => {
 
-                    setData(prev => ({ ...prev, productId: uuid(), productImage: url }));
-                    const newValues = { ...data, productId: uuid(), productImage: url };
+                        setData(prev => ({ ...prev, productId: uuid(), productImage: url }));
+                        const newValues = { ...data, productId: uuid(), productImage: url };
 
-                    console.log('url download file', url)
-                    insertProduct({
-                        variables: {
-                          object: {
-                            id: uuid(),
-                            name: data.productName,
-                            price: data.productPrice,
-                            description: data.productDesc,
-                            freshness: data.productFreshness,
-                            category: data.productCathegory,
-                            image: url
-                          },
-                        },
-                      });
-                })
+                        console.log('url download file', url)
+                        insertProduct({
+                            variables: {
+                                object: {
+                                    id: uuid(),
+                                    name: data.productName,
+                                    price: data.productPrice,
+                                    description: data.productDesc,
+                                    freshness: data.productFreshness,
+                                    category: data.productCathegory,
+                                    image: url
+                                },
+                            },
+                        });
+                    })
             }
         )
     }
-    
+
 
     return (
         <form onSubmit={handleSubmit} className="container mt-5 w-50" id="productForm">
@@ -189,7 +189,7 @@ const Form = ({product}) => {
             </div>
             <div className="mb-4 w-50">
                 <label className="form-label" htmlFor="productCathegory">
-                    Kategori Produk
+                    Kategori Produk Tanaman Hias
                 </label>
                 <select
                     name="productCathegory"
@@ -210,6 +210,9 @@ const Form = ({product}) => {
                     <option name="category" value="Alocasia">
                         Alocasia
                     </option>
+                    <option name="category" value="Lainnya">
+                        Lainnya
+                    </option>
                 </select>
                 <small id="cathegoryError" className="text-danger">
                     {errors.productCathegory}
@@ -219,13 +222,13 @@ const Form = ({product}) => {
                 <label className="form-label" htmlFor="productImage">
                     Gambar Produk
                 </label>
-                <input 
-                className={`form-control ${errors.productCathegory ? "is-invalid" : ""}`} 
-                name="productImage" 
-                // value={data.productImage} 
-                type="file" 
-                onChange={handleInput} 
-                accept="image/*"
+                <input
+                    className={`form-control ${errors.productCathegory ? "is-invalid" : ""}`}
+                    name="productImage"
+                    // value={data.productImage} 
+                    type="file"
+                    onChange={handleInput}
+                    accept="image/*"
                 />
                 <small id="imageError" className="text-danger">
                     {errors.productImage}
@@ -292,12 +295,12 @@ const Form = ({product}) => {
                 <label className="form-label" htmlFor="productPrice">
                     Jumlah Produk Yang Ingin Ditambahkan
                 </label>
-                <input 
-                type="number" 
-                className={`form-control ${errors.productPrice ? "is-invalid" : ""}`} 
-                name="productPrice" 
-                value={data.productPrice} 
-                onChange={handleInput} 
+                <input
+                    type="number"
+                    className={`form-control ${errors.productPrice ? "is-invalid" : ""}`}
+                    name="productPrice"
+                    value={data.productPrice}
+                    onChange={handleInput}
                 />
                 <small id="priceError" className="text-danger" >
                     {errors.productPrice}

@@ -165,7 +165,7 @@ const DetailProduct = () => {
                 </div>
                 <div className="mb-4 w-50">
                     <label className="form-label" htmlFor="productCathegory">
-                        Kategori Produk
+                        Kategori Produk Tanaman Hias
                     </label>
                     <select
                         name="productCathegory"
@@ -185,6 +185,9 @@ const DetailProduct = () => {
                         </option>
                         <option name="category" value="Alocasia">
                             Alocasia
+                        </option>
+                        <option name="category" value="Lainnya">
+                            Lainnya
                         </option>
                     </select>
                 </div>
