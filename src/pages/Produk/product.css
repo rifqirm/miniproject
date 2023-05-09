@@ -1,0 +1,23 @@
+.produkList {
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+.produkList h3{
+    font-family: 'Poppins';
+    font-weight: 900;
+}
+
+.btn-secondary2 {
+    font-size: larger;
+    width: 400px;
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-secondary2:hover {
+    font-size: larger;
+    width: 400px;
+    background-color: var(--secondary);
+    color: white;
+}
