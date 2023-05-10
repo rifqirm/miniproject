@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, BrowserRouter} from 'react-router-dom'
 import Homepage from "./pages/HalamanUtama/homepage";
 import CartPage from "./pages/Keranjang/cart";
 import Sukses  from "./pages/Sukses/Sukses";
@@ -13,8 +13,6 @@ import Footer from "./components/Footer/footer";
 // import ProductDetailPage3 from "./productDetail/product_detail3";
 // import ProductDetailPage4 from "./productDetail/product_detail4";
 
-
-import { useEffect, useState } from 'react';
 import CreateProduct from './pages/CreateProduct/CreateProduct';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 import DetailProduct from './pages/DetailProduct/DetailProduct';
@@ -30,7 +28,6 @@ function App() {
   // const value = {products, setProducts}
 
   return (
-    
       <Router>
         <Navbar/>
         <Routes>
@@ -44,8 +41,8 @@ function App() {
           <Route path="/product4/" element={<ProductDetailPage4 />} /> */}
           {/* <Route path="/contactpage" element={<ContactPage />} /> */}
           {/* <Route element={<PrivateRoute />}> */}
-            <Route path="/requestproduk" element={<CreateProduct />} />
-            <Route path="/detailproduct/:productId" element={<DetailProduct />} />
+          <Route path="/requestproduk" element={<CreateProduct />} />
+          <Route path="/detailproduct/:productId" element={<DetailProduct />} />
           {/* </Route> */}
           <Route path="/detailproduct/:productId" element={<DetailProduct />} />
           <Route path="*" element={<ErrorPage />} />
@@ -56,7 +53,6 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-    
   )
 
 }

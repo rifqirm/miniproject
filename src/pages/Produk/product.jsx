@@ -53,20 +53,9 @@ const ProductList = () => {
         variables: { name: `%${search}%`, limit: limit }
     })
 
-    // if (loading) {
-    //     return (
-    //         <div className='mt-5 row justify-content-center'>
-    //             <BarLoader color="#36d7b7" />
-    //         </div>
-    //     );
-    // }
+
     if (error) {
         console.log(error)
-        // return (
-        //     <div className='mt-5 row justify-content-center'>
-        //         <p>Terjadi kesalahan, mohon maaf.</p>
-        //     </div>
-        // );
     }
 
     const handleSearch = (e) => {
