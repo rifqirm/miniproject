@@ -20,7 +20,7 @@ const Table = () => {
     return (
         <div className="container mt-5">
             <h2 className="text-center mb-4">Daftar Produk</h2>
-            <table className="table table-striped w-75" id="data-table">
+            <table className="table table-striped w-100" id="data-table">
                 <thead>
                     <tr>
                         <th scope="col">No</th>
