@@ -13,15 +13,15 @@ class Navbar extends Component{
                 </div>
                 <ul className={Styles.topmenu}>
                     <li><Link to="/">Homepage</Link></li>
-                    <li><Link to="/produkList/">Produk List</Link></li>
+                    <li><Link to="/produkList">Produk List</Link></li>
                     
-                    <li><Link to="/requestproduk/">Request Produk</Link></li>
-                    <li><Link to="/about/">About</Link></li>
+                    <li><Link to="/requestproduk">Request Produk</Link></li>
+                    <li><Link to="/about">About</Link></li>
                     {/* <li><Link to="/">Homepage</Link></li>
                     <li><Link to="/">Homepage</Link></li> */}
                 </ul>
                 <div className={Styles.cart}>
-                    <div className={Styles.iconCart}><Link to="/keranjang/"><FaShoppingCart /></Link></div>
+                    <div className={Styles.iconCart}><Link to="/keranjang"><FaShoppingCart /></Link></div>
                     
                 </div>
             </div>

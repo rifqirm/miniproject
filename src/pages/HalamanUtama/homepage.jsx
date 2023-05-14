@@ -88,7 +88,7 @@ class Homepage extends Component {
                         <div className={Styles.banner_link}>
                             <h1>Menciptakan ruang yang indah dengan "Demeter"</h1>
                             <p>Membawa keindahan alam ke rumah Anda dan Rasakan keajaiban alam dengan Demeter.</p>
-                            <Link to='/keranjang/'>BELANJA SEKARANG</Link>
+                            <Link to='/keranjang'>BELANJA SEKARANG</Link>
                         </div>
 
                         <div>

@@ -33,7 +33,7 @@ function App() {
         <Routes>
 
           <Route exact path="/" element={<Homepage />} />
-          <Route path="/produkList/" element={<ProductPage />} />
+          <Route path="/produkList" element={<ProductPage />} />
           {/* <Route path="/product/:url" element={<ProductDetailPage />} />
           <Route path="/product1/" element={<ProductDetailPage1 />} />
           <Route path="/product2/" element={<ProductDetailPage2 />} />
@@ -41,14 +41,14 @@ function App() {
           <Route path="/product4/" element={<ProductDetailPage4 />} /> */}
           {/* <Route path="/contactpage" element={<ContactPage />} /> */}
           {/* <Route element={<PrivateRoute />}> */}
-          <Route path="/requestproduk/" element={<CreateProduct />} />
+          <Route path="/requestproduk" element={<CreateProduct />} />
           <Route path="/detailproduct/:productId" element={<DetailProduct />} />
           {/* </Route> */}
           <Route path="/detailproduct/:productId" element={<DetailProduct />} />
           <Route path="*" element={<ErrorPage />} />
-          <Route path="/about/" element={<AboutPage />} />
-          <Route path="/keranjang/" element={<CartPage />} />
-          <Route  path="/sukses/" element={<Sukses />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/keranjang" element={<CartPage />} />
+          <Route  path="/sukses" element={<Sukses />} />
 
         </Routes>
         <Footer />
