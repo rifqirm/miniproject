@@ -16,7 +16,7 @@ export default class TotalBayar extends Component {
         }
 
         axios.post(API_URL + "pesanans", pesanan).then((res) => {
-            this.props.history.push('/sukses')
+            this.props.history.push('/sukses/')
         })
     };
 
@@ -33,7 +33,7 @@ export default class TotalBayar extends Component {
                     <Col className="ms-3 mt-3 bayar">
                         <center><h5>Total Harga : {" "}<strong >Rp. {numberWithCommas(totalBayar)}</strong></h5></center>
                         <Button variant="secondary" className="mb-3 mt-3 mr-3 buttonBayar" size="md"
-                            onClick={() => this.submitTotalBayar(totalBayar)} as={Link} to='/sukses'>
+                            onClick={() => this.submitTotalBayar(totalBayar)} as={Link} to='/sukses/'>
                             <FontAwesomeIcon icon={faShoppingCart} className="ms--5 me-2" /> <strong>BAYAR</strong>
                         </Button>
                     </Col>
@@ -46,7 +46,7 @@ export default class TotalBayar extends Component {
                     <Col className="ms-3 mt-3 bayar">
                         <h5>Total Harga : {" "}<strong className="float-right px-5">Rp. {numberWithCommas(totalBayar)}</strong></h5>
                         <Button variant="secondary" className="mb-3 mt-3 mr-3 buttonBayar" size="md"
-                            onClick={() => this.submitTotalBayar(totalBayar)} as={Link} to='/sukses'>
+                            onClick={() => this.submitTotalBayar(totalBayar)} as={Link} to='/sukses/'>
                             <FontAwesomeIcon icon={faShoppingCart} className="ms--5 me-2" /> <strong>BAYAR</strong>
                         </Button>
                     </Col>

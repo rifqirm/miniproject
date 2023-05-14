@@ -10,7 +10,7 @@ const ProductItem = (props) => {
                 <img src={props.image} alt={props.title} />
                 <h4>{props.title}</h4>
                 <h5>{props.price}</h5>
-                <Link to='/keranjang'>BELI</Link>
+                <Link to='/keranjang/'>BELI</Link>
                 {/* <Link to={'cart/' + props.action}>BELI</Link> */}
             </div>
         </div>
