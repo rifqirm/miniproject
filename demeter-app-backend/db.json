@@ -301,6 +301,23 @@
   ],
   "keranjangs": [
     {
+      "jumlah": 11,
+      "total_harga": 660000,
+      "product": {
+        "id": 3,
+        "kode": "K-03",
+        "nama": "Aglonema Khocin",
+        "harga": 60000,
+        "is_ready": true,
+        "gambar": "3aglonemaKhocin.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Aglonema"
+        }
+      },
+      "id": 1
+    },
+    {
       "jumlah": 1,
       "total_harga": 60000,
       "product": {
@@ -315,7 +332,7 @@
           "nama": "Aglonema"
         }
       },
-      "id": 1
+      "id": 2
     }
   ],
   "pesanans": [
@@ -769,6 +786,48 @@
         }
       ],
       "id": 22
+    },
+    {
+      "total_bayar": 420000,
+      "menus": [
+        {
+          "jumlah": 4,
+          "total_harga": 240000,
+          "product": {
+            "id": 2,
+            "kode": "K-02",
+            "nama": "Aglonema Bigroy",
+            "harga": 60000,
+            "is_ready": true,
+            "gambar": "2aglonemaBigroy.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Aglonema"
+            }
+          },
+          "keterangan": "hati hati",
+          "id": 1
+        },
+        {
+          "jumlah": 3,
+          "total_harga": 180000,
+          "product": {
+            "id": 3,
+            "kode": "K-03",
+            "nama": "Aglonema Khocin",
+            "harga": 60000,
+            "is_ready": true,
+            "gambar": "3aglonemaKhocin.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Aglonema"
+            }
+          },
+          "keterangan": "Oke goood quality",
+          "id": 2
+        }
+      ],
+      "id": 23
     }
   ]
 }

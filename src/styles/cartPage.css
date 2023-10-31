@@ -187,9 +187,9 @@
     width: 20px;
   } */
   
-  /* .overflow-auto::-webkit-scrollbar{
+  .overflow-auto::-webkit-scrollbar{
     display: none;
-  } */
+  }
   
   /* .shadow {
     bottom: 20px;
