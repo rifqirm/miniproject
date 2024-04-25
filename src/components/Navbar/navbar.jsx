@@ -12,11 +12,11 @@ class Navbar extends Component{
                     <img src={Logo} alt="Logo" />
                 </div>
                 <ul className={Styles.topmenu}>
-                    <li><Link to="/">Homepage</Link></li>
-                    <li><Link to="/produkList">Produk List</Link></li>
+                    <li><Link to="/">Halaman Utama</Link></li>
+                    <li><Link to="/produkList">Urutan Produk</Link></li>
                     
-                    <li><Link to="/requestproduk">Request Produk</Link></li>
-                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/requestproduk">Permintaan Produk</Link></li>
+                    <li><Link to="/about">Tentang</Link></li>
                     {/* <li><Link to="/">Homepage</Link></li>
                     <li><Link to="/">Homepage</Link></li> */}
                 </ul>
