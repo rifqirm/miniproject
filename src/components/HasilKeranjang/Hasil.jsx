@@ -76,8 +76,8 @@ export default class Hasil extends Component {
             .then((res) => {
                 this.props.getListKeranjang();
                 swal({
-                    title: "Update Pesanan!",
-                    text: "Sukses Update Pesanan " + data.product.nama,
+                    title: "Update Produk!",
+                    text: "Sukses Update Produk " + data.product.nama,
                     icon: "success",
                     button: false,
                     timer: 1500,
@@ -96,9 +96,9 @@ export default class Hasil extends Component {
             .then((res) => {
                 this.props.getListKeranjang();
                 swal({
-                    title: "Hapus Pesanan!",
+                    title: "Hapus Produk!",
                     text:
-                        "Sukses Hapus Pesanan " + this.state.keranjangDetail.product.nama,
+                        "Sukses Hapus Produk " + this.state.keranjangDetail.product.nama,
                     icon: "error",
                     button: false,
                     timer: 1500,
