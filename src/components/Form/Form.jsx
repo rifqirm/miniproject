@@ -204,8 +204,8 @@ const Form = ({ product }) => {
           <option name="category" value="Tanaman Hias Bunga">
             Tanaman Hias Bunga
           </option>
-          <option name="category" value="Tanaman Hias daun">
-            Tanaman Hias daun
+          <option name="category" value="Tanaman Hias Daun">
+            Tanaman Hias Daun
           </option>
           <option name="category" value="Tanaman Hias Batang atau Pohon">
             Tanaman Hias Batang atau Pohon
