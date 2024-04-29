@@ -198,21 +198,27 @@ const Form = ({ product }) => {
                     aria-label="Default select example"
                     onChange={handleInput}
                 >
-                    <option disable="" value="" hidden="">
-                        Plih...
-                    </option>
-                    <option name="category" value="Alognema">
-                        Alognema
-                    </option>
-                    <option name="category" value="Homalomena">
-                        Homalomena
-                    </option>
-                    <option name="category" value="Alocasia">
-                        Alocasia
-                    </option>
-                    <option name="category" value="Lainnya">
-                        Lainnya
-                    </option>
+         <option disable="" value="" hidden="">
+            Plih...
+          </option>
+          <option name="category" value="Tanaman Hias Bunga">
+            Tanaman Hias Bunga
+          </option>
+          <option name="category" value="Tanaman Hias daun">
+            Tanaman Hias daun
+          </option>
+          <option name="category" value="Tanaman Hias Batang atau Pohon">
+            Tanaman Hias Batang atau Pohon
+          </option>
+          <option name="category" value="Tanaman Hias Buah">
+            Tanaman Hias Buah
+          </option>
+          <option name="category" value="Tanaman Hias Akar">
+            Tanaman Hias Akar
+          </option>
+          <option name="category" value="Lainnya">
+            Lainnya
+          </option>
                 </select>
                 <small id="cathegoryError" className="text-danger">
                     {errors.productCathegory}
