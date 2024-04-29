@@ -79,7 +79,7 @@ const ProductList = () => {
                         <div className='produkList'>
                             <h3>Product List</h3>
                             <p>
-                                <center>Berisi daftar produk yang telah di buat di halaman permintaan product.</center>
+                                <center>Berisi daftar produk yang telah di buat di halaman permintaan produk.</center>
                             </p>
 
                             <div className="mb-3 w-25">
